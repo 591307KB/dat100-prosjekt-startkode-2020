@@ -109,16 +109,16 @@ public class GPSUtils {
 	private static int TEXTWIDTH = 10;
 
 	public static String formatDouble(double d) {
-
+	
 		String str = "";
-
 		d *= 100;
 		d = Math.round(d);
 		d /= 100;
-		for (int i = String.valueOf(d).length(); i < TEXTWIDTH; i++) {
+		String temp = String.format("%.2f", d);
+		for (int i = temp.length(); i < TEXTWIDTH; i++) {
 			str += " ";
 		}
-		str += d;
+		str += temp;
 		return str;
 	}
 }

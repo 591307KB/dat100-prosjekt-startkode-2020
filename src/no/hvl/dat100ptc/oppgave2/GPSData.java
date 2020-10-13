@@ -34,10 +34,9 @@ public class GPSData {
 		boolean insert = false;
 
 		gpspoint = GPSDataConverter.convert(time, latitude, longitude, elevation);
-		if(insertGPS(gpspoint))
+		if (insertGPS(gpspoint))
 			insert = true;
 		return insert;
-		
 
 	}
 
@@ -45,7 +44,7 @@ public class GPSData {
 
 		System.out.println("====== Konvertert GPS Data - START ======");
 
-		for(;antall<gpspoints.length;antall++) {
+		for (; antall < gpspoints.length; antall++) {
 			System.out.println(gpspoints[antall].toString());
 		}
 

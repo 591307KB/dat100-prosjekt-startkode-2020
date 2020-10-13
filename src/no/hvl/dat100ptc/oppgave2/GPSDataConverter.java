@@ -25,8 +25,8 @@ public class GPSDataConverter {
 
 		int time = toSeconds(timeStr);
 		double latitude = Double.parseDouble(latitudeStr);
-		double longitude = Double.parseDouble(longitudeStr);;
-		double elevation = Double.parseDouble(elevationStr);;
+		double longitude = Double.parseDouble(longitudeStr);
+		double elevation = Double.parseDouble(elevationStr);
 		
 	    gpspoint = new GPSPoint(time,latitude,longitude,elevation);
 	    return gpspoint;
